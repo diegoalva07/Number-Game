@@ -15,7 +15,7 @@
         <h2>Guess the random number <br> between 1-100</h2>
        
         <section>
-            <p> Select difficulty setting</p>
+            <p> Select difficulty setting:</p>
             <div class="buttonWrapper">
                 <button>Easy: 10 Attemps</button>
                 <button>Hard: 5 Attemps</button>
@@ -24,10 +24,38 @@
         </section>
 
     </div>
-    <div id="gameArea"></div>
-    <div id="gameArea"></div>
-    <div id="gameArea"></div>
-    <div id="gameArea"></div>
+    <div id="gameArea">
+        
+        <button id="newGameButton">NEW GAME</button>
+        <section>
+            
+            <h3 id="text output">Your Guess!</h3>
+            <input type="number" id="inputBox" min="1" max="100">
+        </section>
+        <section>
+            <p>Current Range</p>
+            <span id="rangeOutput">1-100</span>
+            <div id="range">
+                <span id="low"></span>
+                <span id="space"></span>
+                <span id="high"></span>
+            </div>
+        </section>
+        <section class="stats">
+            
+            <div class="infor">
+                <p>Number of previous attepments</p>
+                <span id="attempts">0</span>
+            </div>
+            
+             <div class="infor">
+                <p>Your previous guesses</p>
+                <span id="guesses">-</span>
+            </div>
+        </section>
+        
+    </div>
+   
     
 
 </main>
